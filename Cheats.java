@@ -45,13 +45,9 @@ public class Cheats {
     
     // Killaura
     
-    public static void enableKillaura() {
+    public static void attackClosest() {
         PlayerEntity target = MinecraftClient.getInstance().world.getClosestPlayer(MinecraftClient.getInstance().player, 5.0);
         MinecraftClient.getInstance().interactionManager.attackEntity(MinecraftClient.getInstance().player, target);
-    }
-    
-    public static void disableKillaura() {
-        // Killaura automatically disables after each attack
     }
     
     // Player Move
